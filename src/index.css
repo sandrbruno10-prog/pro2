@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './App.css';
+
+/* تحسينات أساسية لـ Tailwind */
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-nexus-black text-white antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  ::selection {
+    @apply bg-nexus-accent text-nexus-black;
+  }
+}
+
+/* أدوات مساعدة */
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}
