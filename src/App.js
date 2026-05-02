@@ -698,25 +698,121 @@ function App() {
       </section>
 
       {/* === Team === */}
-      <section className="section" id="team">
-        <div className="container">
-          <div className="section-header center">
-            <div className="section-label reveal">Our Team</div>
-            <h2 className="section-title reveal reveal-delay-1">Meet the Experts</h2>
-            <p className="section-subtitle reveal reveal-delay-2">The talented minds behind NexusTech's success.</p>
+     {/* === Team / Teamwork Structure === */}
+<section className="section section-alt" id="team">
+  <div className="container">
+    <div className="section-header center">
+      <div className="section-label reveal">Our Structure</div>
+      <h2 className="section-title reveal reveal-delay-1">Team Organization</h2>
+      <p className="section-subtitle reveal reveal-delay-2">Hierarchical structure showcasing our collaborative framework and team divisions.</p>
+    </div>
+
+    {/* === Organizational Chart === */}
+    <div className="org-chart-wrapper reveal">
+      <div className="org-chart-container">
+        {/* Level 1 - Leadership */}
+        <div className="org-level level-1">
+          <div className="org-node leadership-node">
+            <div className="node-avatar">👑</div>
+            <div className="node-name">Roumeissa</div>
+            <div className="node-role">Co-Founder</div>
           </div>
-          <div className="team-grid">
-            {[['🛡️', 'Amina K.', 'Lead Security Architect', '10+ years in enterprise security, CISSP certified.'], ['🎮', 'Youssef M.', 'Senior Game Developer', 'Unreal Engine specialist, shipped 5+ AAA titles.'], ['🤖', 'Sara B.', 'AI/ML Specialist', 'PhD in Machine Learning, TensorFlow expert.'], ['⚛️', 'Karim L.', 'Full-Stack Engineer', 'React/Node.js architect, DevOps enthusiast.']].map(([icon, name, role, bio], i) => (
-              <div className={`team-card reveal ${i > 0 ? `reveal-delay-${i}` : ''}`} key={i}>
-                <div className="team-avatar">{icon}</div>
-                <h4>{name}</h4>
-                <p className="team-role">{role}</p>
-                <p className="team-bio">{bio}</p>
-              </div>
-            ))}
+          <div className="org-node leadership-node">
+            <div className="node-avatar">👑</div>
+            <div className="node-name">Razan</div>
+            <div className="node-role">Co-Founder</div>
           </div>
         </div>
-      </section>
+
+        {/* Level 2 - Department Heads */}
+        <div className="org-level level-2">
+          <div className="org-branch">
+            <div className="org-node department-node">
+              <div className="node-avatar">⚙️</div>
+              <div className="node-name">Abderahman</div>
+              <div className="node-role">Automatisation</div>
+            </div>
+          </div>
+          
+          <div className="org-branch">
+            <div className="org-node department-node">
+              <div className="node-avatar">🌐</div>
+              <div className="node-name">Taib</div>
+              <div className="node-role">Web Development</div>
+            </div>
+            {/* Web Development Sub-teams */}
+            <div className="org-sub-branch">
+              <div className="org-node team-node">
+                <div className="node-avatar">🎨</div>
+                <div className="node-name">Seif</div>
+                <div className="node-role">Front-End</div>
+              </div>
+              <div className="org-node team-node">
+                <div className="node-avatar">🎨</div>
+                <div className="node-name">Imed</div>
+                <div className="node-role">Front-End</div>
+              </div>
+              <div className="org-node team-node">
+                <div className="node-avatar">⚙️</div>
+                <div className="node-name">Wail</div>
+                <div className="node-role">Back-End</div>
+              </div>
+              <div className="org-node team-node">
+                <div className="node-avatar">⚙️</div>
+                <div className="node-name">Faycel</div>
+                <div className="node-role">Back-End</div>
+              </div>
+              <div className="org-node team-node">
+                <div className="node-avatar">📱</div>
+                <div className="node-name">Djalil</div>
+                <div className="node-role">Mobile</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="org-branch">
+            <div className="org-node department-node">
+              <div className="node-avatar">🛡️</div>
+              <div className="node-name">Nazim</div>
+              <div className="node-role">Cyber Security</div>
+            </div>
+            {/* Cyber Security Team */}
+            <div className="org-sub-branch">
+              <div className="org-node team-node">
+                <div className="node-avatar">🔒</div>
+                <div className="node-name">Youcef</div>
+                <div className="node-role">Security</div>
+              </div>
+              <div className="org-node team-node">
+                <div className="node-avatar">🔒</div>
+                <div className="node-name">Adem</div>
+                <div className="node-role">Security</div>
+              </div>
+              <div className="org-node team-node">
+                <div className="node-avatar">🔒</div>
+                <div className="node-name">Abderahman</div>
+                <div className="node-role">Security</div>
+              </div>
+              <div className="org-node team-node">
+                <div className="node-avatar">🔒</div>
+                <div className="node-name">Ilyes</div>
+                <div className="node-role">Security</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="org-branch">
+            <div className="org-node department-node">
+              <div className="node-avatar">📡</div>
+              <div className="node-name">Ilyes</div>
+              <div className="node-role">Communications</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* === Experience === */}
       <section className="section section-alt" id="experience">
